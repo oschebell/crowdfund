@@ -1,7 +1,7 @@
 class ProjectsController < ApplicationController
 
 def index
- @projects = ['Electric Skateboard', 'Meat Popsicle', 'Waterproof Teabag']
+ @projects = ['Electric Skateboard', 'Meat Popsicle', 'Waterproof Teabag', 'Poochnet']
 end
 
 end
