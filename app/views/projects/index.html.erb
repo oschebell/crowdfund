@@ -2,7 +2,7 @@
 <ul>
 <% @projects.each do |project| %>
     <li><strong><%= project.name %></strong>
-                : <%= project.description %>.
+                : <%= truncate(project.description, length: 10, separator: ' ') %>.
                  Amount needed to raise - <%= number_to_currency(project.target_pledge_amount) %>
     </li>
     <p><%= project.website %></p>
