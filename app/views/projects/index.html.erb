@@ -1,4 +1,4 @@
-<h1>Projects</h1>
+<h1><%= pluralize(@projects.count, 'project') %></h1>
 <ul>
 <% @projects.each do |project| %>
     <li><strong><%= project.name %></strong>
