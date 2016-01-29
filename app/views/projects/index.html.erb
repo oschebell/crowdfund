@@ -6,7 +6,14 @@
                  Amount needed to raise - <%= number_to_currency(project.target_pledge_amount) %>
     </li>
     <p><%= project.website %></p>
-    <p>Pledging ends in: <%= distance_of_time_in_words(Time.now, project.pledging_ends_on) %></p>
+    <p>Pledging ends in: <%= format_pledging_ends_on(project) %></p>
+
+   
 <% end %>
+
+
+
 </ul>
+
+
 
